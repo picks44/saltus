@@ -1,15 +1,41 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <title>SALTUS</title>
+    <meta name="description" content="Saltus">
+
+    <meta property="og:title" content="Saltus">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Saltus">
+    <meta property="og:url" content="<%= BASE_URL %>">
+    <meta property="og:image" content="<%= BASE_URL %>img/saltus-logo-big.png">
+
+    <link rel="author" href="<%= BASE_URL %>humans.txt">
+
+     <!-- Google Tag Manager -->
+     <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-T7CFCZR');
+    </script>
+    <!-- End Google Tag Manager -->
   </head>
-  <body>
+  <body id="top" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+    <!-- Google Tag Manager (noscript) -->
     <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T7CFCZR" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <noscript>
+      <strong>We're sorry but SALTUS doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->

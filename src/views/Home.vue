@@ -2,14 +2,14 @@
   <div class="container-fluid">
     <div id="video" class="row d-none d-md-block">
       <video loop muted autoplay controlsList="nodownload">
-        <source src="video/video.mp4" type="video/mp4" />
+        <source src="../assets/video/video.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <div id="welcome" class="text-center">
         <h1>
           <img
             alt="SALTUS"
-            src="img/saltus-logo-white.svg"
+            src="../assets/img/saltus-logo-white.svg"
             height="80"
             loading="lazy"
           />
@@ -20,7 +20,11 @@
         </p>
         <ul>
           <li>
-            <a class="btn btn-lg btn-saltus" href="#about" title="About us"
+            <a
+              class="btn btn-lg btn-saltus"
+              href="#about"
+              title="About us"
+              v-smooth-scroll
               >About us</a
             >
           </li>
@@ -29,6 +33,7 @@
               class="btn btn-lg btn-saltus"
               href="#gfa"
               title="Geared Front Attachment"
+              v-smooth-scroll
               >Geared Front Attachment</a
             >
           </li>
@@ -37,6 +42,7 @@
               class="btn btn-lg btn-saltus"
               href="#socket"
               title="Socket & Bits"
+              v-smooth-scroll
               >Socket & Bits</a
             >
           </li>
@@ -45,13 +51,14 @@
               class="btn btn-lg btn-saltus"
               href="#care"
               title="Care and Maintenance"
+              v-smooth-scroll
               >Care and Maintenance</a
             >
           </li>
         </ul>
         <p class="go-down">
-          <a href="#about" title="About us"
-            ><i class="fas fa-chevron-down"></i
+          <a href="#about" title="About us" v-smooth-scroll
+            ><fa icon="chevron-down"></fa
           ></a>
         </p>
       </div>
@@ -67,7 +74,7 @@
           <p class="text-center mb-4">
             <img
               alt="SALTUS"
-              src="img/saltus-logo-green.svg"
+              src="../assets/img/saltus-logo-green.svg"
               height="50"
               loading="lazy"
             />
@@ -114,9 +121,7 @@
         <div class="row">
           <div class="col-sm-12 col-md-6 col-lg-4">
             <div class="text-center">
-              <span class="saltus-color"
-                ><i class="fas fa-users fa-5x"></i
-              ></span>
+              <span class="saltus-color"><fa icon="users" size="5x"></fa></span>
               <h3 class="mt-2">Our people</h3>
             </div>
             <p>
@@ -130,9 +135,7 @@
           </div>
           <div class="col-sm-12 col-md-6 col-lg-4">
             <div class="text-center">
-              <span class="saltus-color"
-                ><i class="fas fa-cogs fa-5x"></i
-              ></span>
+              <span class="saltus-color"><fa icon="cogs" size="5x"></fa></span>
               <h3 class="mt-2">Our operations</h3>
             </div>
             <p>
@@ -145,7 +148,7 @@
           <div class="col-sm-12 col-md-6 col-lg-4">
             <div class="text-center">
               <span class="saltus-color"
-                ><i class="fas fa-check-double fa-5x"></i
+                ><fa icon="check-double" size="5x"></fa
               ></span>
               <h3 class="mt-2">Our manufacturing expertise</h3>
             </div>
@@ -260,7 +263,7 @@
     <div id="socket" class="row p-md-5 pt-5">
       <div class="col-12 mb-3">
         <h2 class="text-center mt-3">
-          Saltus Sockets and Bits for Industrial Power Tools
+          Saltus sockets-bits for Industrial Power Tools
         </h2>
         <hr class="underliner" />
       </div>
@@ -269,29 +272,29 @@
           <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 mb-sm-3">
             <div class="embed-responsive embed-responsive-16by9">
               <video controls controlsList="nodownload">
-                <source src="video/video2.mp4" type="video/mp4" />
+                <source src="../assets/video/video2.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
           </div>
           <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
             <p>
-              Saltus support you with the correct Sockets and Bits for any
-              customers tightening application. We have a wide standard
-              portfolio with 2600 Sockets & Bits from tiny 4 mm half-moon bits
-              for assembling state-of-the-art smartphones up to 2 1/2" HEX
-              Sockets for the manufacture and maintenance of windmills or the
-              full range of highly durable sockets and bits for automotive
-              production. For a great part of our standard Sockets & Bits range
-              we offer our safe ROTACTION concept with free rotating sleeves.
-              Furthermore we offer a range of Hold and Drive and Flush Socket
-              solutions. If you do not find solutions to your assembly
-              challenges among our standard products, our Competence Center
-              Sockets & Bits team will help you with a customized solution.
+              Saltus support you with the correct sockets-bits for any customers
+              tightening application. We have a wide standard portfolio with
+              2600 Sockets & Bits from tiny 4 mm half-moon bits for assembling
+              state-of-the-art smartphones up to 2 1/2" HEX Sockets for the
+              manufacture and maintenance of windmills or the full range of
+              highly durable sockets-bits for automotive production. For a great
+              part of our standard Sockets & Bits range we offer our safe
+              ROTACTION concept with free rotating sleeves. Furthermore we offer
+              a range of Hold and Drive and Flush Socket solutions. If you do
+              not find solutions to your assembly challenges among our standard
+              products, our Competence Center Sockets & Bits team will help you
+              with a customized solution.
             </p>
             <h3>Features</h3>
             <ul class="first">
-              <li>Sockets and Bits with outstanding quality and durability</li>
+              <li>sockets-bits with outstanding quality and durability</li>
               <li>
                 ROTACTION concept with free rotating sleeves increase safety at
                 work
@@ -300,13 +303,13 @@
             <h3>Benefits</h3>
             <ul class="first">
               <li>
-                Wide range of standard Sockets and Bits from tiny 4 mm half-moon
+                Wide range of standard sockets-bits from tiny 4 mm half-moon
                 bits up to 2 ½” HEX Sockets for any customers tightening
                 application
               </li>
               <li>
-                Full range of Sockets and Bits for automotive production that
-                are characterized by their durability.
+                Full range of sockets-bits for automotive production that are
+                characterized by their durability.
               </li>
               <li>Wide product range for special applications</li>
               <li>Stock kept products with excellent delivery performance</li>
@@ -316,7 +319,7 @@
       </div>
       <div class="col-12 mt-4">
         <h3 class="text-center">
-          Saltus standard portfolio of machine-operated Sockets and Bits
+          Saltus standard portfolio of machine-operated sockets-bits
         </h3>
         <p class="text-center">
           Below you have a general overview for the different standard articles
@@ -331,7 +334,7 @@
           >
             <img
               class="d-sm-inline-block img-fluid"
-              src="img/Sockets%20and%20Bits/A.jpg"
+              src="../assets/img/sockets-bits/A.jpg"
               alt="Sockets"
               loading="lazy"
             />
@@ -345,7 +348,7 @@
           >
             <img
               class="d-sm-inline-block img-fluid"
-              src="img/Sockets%20and%20Bits/B.jpg"
+              src="../assets/img/sockets-bits/B.jpg"
               alt="Bit Sockets"
               loading="lazy"
             />
@@ -359,7 +362,7 @@
           >
             <img
               class="d-sm-inline-block img-fluid"
-              src="img/Sockets%20and%20Bits/C.jpg"
+              src="../assets/img/sockets-bits/C.jpg"
               alt="Extensions"
               loading="lazy"
             />
@@ -373,13 +376,17 @@
           >
             <img
               class="d-sm-inline-block img-fluid"
-              src="img/Sockets%20and%20Bits/D.jpg"
+              src="../assets/img/sockets-bits/D.jpg"
               alt="Adapters"
               loading="lazy"
             />
             <p><strong>Adapters</strong></p>
           </div>
-          <div id="socket-A" class="col-12 collapse" data-parent="#accordion">
+          <div
+            id="socket-A"
+            class="col-12 collapse text-left"
+            data-parent="#accordion"
+          >
             <h4>Sockets</h4>
             <p>
               Sockets are characterized by a female square drive at the input
@@ -410,7 +417,11 @@
               </li>
             </ul>
           </div>
-          <div id="socket-B" class="col-12 collapse" data-parent="#accordion">
+          <div
+            id="socket-B"
+            class="col-12 collapse text-left"
+            data-parent="#accordion"
+          >
             <h4>Bit sockets</h4>
             <p>
               When a socket is combined with a bit, it is known as a bit socket.
@@ -435,7 +446,11 @@
               </li>
             </ul>
           </div>
-          <div id="socket-C" class="col-12 collapse" data-parent="#accordion">
+          <div
+            id="socket-C"
+            class="col-12 collapse text-left"
+            data-parent="#accordion"
+          >
             <h4>Extensions</h4>
             <p>
               Suited for all kind of power tools. Fitted between the tool drive
@@ -461,7 +476,11 @@
               </li>
             </ul>
           </div>
-          <div id="socket-D" class="col-12 collapse" data-parent="#accordion">
+          <div
+            id="socket-D"
+            class="col-12 collapse text-left"
+            data-parent="#accordion"
+          >
             <h4>Adapters and Quick-Change Adapters</h4>
             <p>
               Adapters fit between the tool and the socket to allow the socket
@@ -504,7 +523,7 @@
           <div class="col-6 col-sm-6 col-md-2 text-center">
             <img
               class="d-sm-inline-block img-fluid"
-              src="img/Sockets%20and%20Bits/E.jpg"
+              src="../assets/img/sockets-bits/E.jpg"
               alt="Bits"
               loading="lazy"
             />
@@ -513,7 +532,7 @@
           <div class="col-6 col-sm-6 col-md-2 text-center">
             <img
               class="d-sm-inline-block img-fluid"
-              src="img/Sockets%20and%20Bits/F.jpg"
+              src="../assets/img/sockets-bits/F.jpg"
               alt="Bit holders"
               loading="lazy"
             />
@@ -522,7 +541,7 @@
           <div class="col-6 col-sm-6 col-md-2 text-center">
             <img
               class="d-sm-inline-block img-fluid"
-              src="img/Sockets%20and%20Bits/G.jpg"
+              src="../assets/img/sockets-bits/G.jpg"
               alt="Nut setters"
               loading="lazy"
             />
@@ -531,7 +550,7 @@
           <div class="col-6 col-sm-6 col-md-2 text-center">
             <img
               class="d-sm-inline-block img-fluid"
-              src="img/Sockets%20and%20Bits/H.jpg"
+              src="../assets/img/sockets-bits/H.jpg"
               alt="Stud setters"
               loading="lazy"
             />
@@ -559,7 +578,7 @@
           </div>
           <div class="col-sm-12 col-md-6 text-center">
             <img
-              src="img/image_contact.jpg.png"
+              src="../assets/img/image_contact.jpg.png"
               class="img-fluid"
               alt=""
               loading="lazy"
@@ -598,12 +617,14 @@
 
     <footer class="text-center pt-4 pb-2">
       <p class="go-up mb-3">
-        <a href="#top" title=""><i class="fas fa-chevron-up"></i></a>
+        <a href="#top" title="Go to top" v-smooth-scroll
+          ><fa icon="chevron-up"></fa
+        ></a>
       </p>
       <hr />
       <p class="mt-4">
         <img
-          src="img/saltus-logo-green.svg"
+          src="../assets/img/saltus-logo-green.svg"
           height="30"
           alt=""
           loading="lazy"
@@ -653,9 +674,172 @@ export default {
 </script>
 
 <style scoped>
-.carousels {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+body {
+  min-height: 75rem;
+  padding-top: 3.5rem;
+}
+
+hr.underliner {
+  border-top: solid 5px #007a57;
+  margin: 10px auto 20px;
+  width: 10%;
+}
+
+a {
+  color: #007a57;
+}
+
+a:hover {
+  color: #003326;
+}
+
+.btn-saltus {
+  background-color: #007a57;
+  border-color: #007a57;
+  color: #fff;
+  border-radius: 0;
+}
+
+.btn-saltus:hover {
+  color: #fff;
+  background-color: #003326;
+  border-color: #003326;
+}
+
+.saltus-color {
+  color: #007a57;
+}
+
+.bg-white {
+  background-color: #fff !important;
+}
+
+ul {
+  list-style: none;
+}
+
+ul.first li:before {
+  content: '';
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  background-image: url('../assets/img/right-chevron-green.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 0.5em;
+}
+
+ul.second li:before {
+  content: '';
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  background-image: url('../assets/img/right-chevron-yellow.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 0.5em;
+}
+
+/* HEADER */
+#video {
+  background-color: #999;
+}
+
+#video video {
+  opacity: 0.3;
+  width: 100%;
+}
+
+#welcome {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  color: #fff;
+  background-color: transparent !important;
+  top: 30%;
+}
+
+#welcome h1 span {
+  display: none !important;
+}
+
+#welcome .baseline {
+  font-size: 2rem;
+}
+
+#welcome ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 30px 0;
+}
+
+#welcome ul > li {
+  display: inline-block;
+  padding: 0;
+}
+
+.go-down a,
+.go-up a {
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  display: inline-block;
+  padding: 10px;
+  text-shadow: none;
+}
+
+.go-down a {
+  background: #fff;
+  color: #007a57;
+}
+
+.go-up a {
+  background: #007a57;
+  color: #fff;
+}
+
+.go-down a:hover {
+  background: #fff;
+  color: #003326;
+}
+
+.go-up a:hover {
+  background: #003326;
+  color: #fff;
+}
+
+/* ABOUT */
+#about blockquote.blockquote {
+  padding: 30px;
+  border-left: 5px solid #007a57;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* BITS */
+#accordion > div[data-toggle='collapse'] > p {
+  text-decoration: underline;
+}
+
+#accordion > div[data-toggle='collapse'] {
+  cursor: pointer;
+}
+
+#accordion > div[data-toggle='collapse']:hover > p {
+  text-decoration: none;
+}
+
+#accordion > div[data-toggle='collapse'] {
+  transition-property: opacity;
+  transition-duration: 1s;
+}
+
+#accordion.triggered > div[aria-expanded='true'] {
+  opacity: 1;
+}
+
+#accordion.triggered > div[aria-expanded='false'] {
+  opacity: 0.5;
 }
 </style>

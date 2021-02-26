@@ -1,0 +1,17 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Developer: Vincent GHISLAIN
+    Email Developer: vincent.ghislain [at] desouttertools.com
+    Site Developer: http://www.vincentghislain.fr
+    Twitter: @V_in_Z
+    Location: Nantes, France
+
+# TECHNOLOGY COLOPHON
+
+    Standards: HTML5, CSS3, PHP7
+    IDE: PHPStorm
+    Doctype: HTML5
+    Components: Twitter Bootstrap, jQuery, Font Awesome

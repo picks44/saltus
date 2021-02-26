@@ -43,7 +43,6 @@ export default {
         .catch(error => {
           if (error.response) {
             if (404 === error.response.status) {
-              console.log(error.response.data)
               $('#notAvailable').on('show.bs.modal', function() {
                 $(this)
                   .find('.modal-body p#message')
@@ -58,4 +57,27 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+.btn-saltus {
+  background-color: #007a57;
+  border-color: #007a57;
+  color: #fff;
+  border-radius: 0;
+}
+
+.btn-saltus:hover {
+  color: #fff;
+  background-color: #003326;
+  border-color: #003326;
+}
+
+.form-control {
+  border-radius: 0;
+}
+
+.form-control:focus {
+  border-color: #007a57;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgb(0 122 87 / 25%);
+}
+</style>
