@@ -1,5 +1,5 @@
 <template>
-  <div class="carousel">
+  <div class="image-carousel">
     <img v-bind:src="image.path" v-bind:alt="image.name" />
     <p>{{ image.name }}</p>
   </div>
@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  name: 'Carousel',
+  name: 'ImageCarousel',
   props: {
     image: {
       type: Object,
@@ -18,7 +18,7 @@ export default {
 </script>
 
 <style scoped>
-.carousel {
+.image-carousel {
   border: 1px solid red;
 }
 </style>
