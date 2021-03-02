@@ -1,8 +1,4 @@
 import { createApp } from 'vue'
-import App from './App.vue'
-import './registerServiceWorker'
-import router from './router'
-import store from './store'
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
@@ -15,6 +11,10 @@ import {
   faChevronUp
 } from '@fortawesome/free-solid-svg-icons'
 import VueSmoothScroll from 'v-smooth-scroll'
+import App from './App.vue'
+import './registerServiceWorker'
+import router from './router'
+import store from './store'
 
 library.add(faChevronDown, faUsers, faCogs, faCheckDouble, faChevronUp)
 

@@ -58,19 +58,6 @@ export default {
 </script>
 
 <style scoped>
-.btn-saltus {
-  background-color: #007a57;
-  border-color: #007a57;
-  color: #fff;
-  border-radius: 0;
-}
-
-.btn-saltus:hover {
-  color: #fff;
-  background-color: #003326;
-  border-color: #003326;
-}
-
 .form-control {
   border-radius: 0;
 }

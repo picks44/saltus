@@ -1,7 +1,10 @@
 <template>
-  <div class="image-carousel">
-    <img v-bind:src="image.path" v-bind:alt="image.name" />
-    <p>{{ image.name }}</p>
+  <div class="carousel-item" data-interval="3000">
+    <img
+      class="d-block w-100"
+      :src="resolve_img_url(image.path)"
+      :alt="image.name"
+    />
   </div>
 </template>
 
@@ -12,6 +15,12 @@ export default {
     image: {
       type: Object,
       required: true
+    }
+  },
+  methods: {
+    resolve_img_url: function(path) {
+      let images = require.context('@/assets/img/', true, /^.*\.png$/)
+      return images('./' + path)
     }
   }
 }

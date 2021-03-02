@@ -2,14 +2,14 @@
   <div class="container-fluid">
     <div id="video" class="row d-none d-md-block">
       <video loop muted autoplay controlsList="nodownload">
-        <source src="../assets/video/video.mp4" type="video/mp4" />
+        <source src="@/assets/video/video.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <div id="welcome" class="text-center">
         <h1>
           <img
             alt="SALTUS"
-            src="../assets/img/saltus-logo-white.svg"
+            src="@/assets/img/saltus-logo-white.svg"
             height="80"
             loading="lazy"
           />
@@ -21,7 +21,7 @@
         <ul>
           <li>
             <a
-              class="btn btn-lg btn-saltus"
+              class="btn btn-lg btn-saltus mx-1"
               href="#about"
               title="About us"
               v-smooth-scroll
@@ -30,7 +30,7 @@
           </li>
           <li>
             <a
-              class="btn btn-lg btn-saltus"
+              class="btn btn-lg btn-saltus mx-1"
               href="#gfa"
               title="Geared Front Attachment"
               v-smooth-scroll
@@ -39,7 +39,7 @@
           </li>
           <li>
             <a
-              class="btn btn-lg btn-saltus"
+              class="btn btn-lg btn-saltus mx-1"
               href="#socket"
               title="Socket & Bits"
               v-smooth-scroll
@@ -48,7 +48,7 @@
           </li>
           <li>
             <a
-              class="btn btn-lg btn-saltus"
+              class="btn btn-lg btn-saltus mx-1"
               href="#care"
               title="Care and Maintenance"
               v-smooth-scroll
@@ -74,7 +74,7 @@
           <p class="text-center mb-4">
             <img
               alt="SALTUS"
-              src="../assets/img/saltus-logo-green.svg"
+              src="@/assets/img/saltus-logo-green.svg"
               height="50"
               loading="lazy"
             />
@@ -170,25 +170,21 @@
       <div class="col-12">
         <div class="row d-flex align-items-center">
           <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4 mb-sm-3">
-            <div
-              class="carousel slide carousel-fade lazy border mb-3"
-              data-ride="carousel"
-            >
+            <div class="carousel slide lazy border mb-3" data-ride="carousel">
               <div class="carousel-inner">
                 <ImageCarousel
-                  v-for="image in images"
+                  v-for="(image, index) in CeImages"
+                  :class="{ active: index === 0 }"
                   :key="image.id"
                   :image="image"
                 />
               </div>
             </div>
-            <div
-              class="carousel slide carousel-fade lazy border"
-              data-ride="carousel"
-            >
+            <div class="carousel slide lazy border" data-ride="carousel">
               <div class="carousel-inner">
                 <ImageCarousel
-                  v-for="image in images"
+                  v-for="(image, index) in OeImages"
+                  :class="{ active: index === 0 }"
                   :key="image.id"
                   :image="image"
                 />
@@ -272,7 +268,7 @@
           <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 mb-sm-3">
             <div class="embed-responsive embed-responsive-16by9">
               <video controls controlsList="nodownload">
-                <source src="../assets/video/video2.mp4" type="video/mp4" />
+                <source src="@/assets/video/video2.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
@@ -334,7 +330,7 @@
           >
             <img
               class="d-sm-inline-block img-fluid"
-              src="../assets/img/sockets-bits/A.jpg"
+              src="@/assets/img/sockets-bits/A.jpg"
               alt="Sockets"
               loading="lazy"
             />
@@ -348,7 +344,7 @@
           >
             <img
               class="d-sm-inline-block img-fluid"
-              src="../assets/img/sockets-bits/B.jpg"
+              src="@/assets/img/sockets-bits/B.jpg"
               alt="Bit Sockets"
               loading="lazy"
             />
@@ -362,7 +358,7 @@
           >
             <img
               class="d-sm-inline-block img-fluid"
-              src="../assets/img/sockets-bits/C.jpg"
+              src="@/assets/img/sockets-bits/C.jpg"
               alt="Extensions"
               loading="lazy"
             />
@@ -376,7 +372,7 @@
           >
             <img
               class="d-sm-inline-block img-fluid"
-              src="../assets/img/sockets-bits/D.jpg"
+              src="@/assets/img/sockets-bits/D.jpg"
               alt="Adapters"
               loading="lazy"
             />
@@ -523,7 +519,7 @@
           <div class="col-6 col-sm-6 col-md-2 text-center">
             <img
               class="d-sm-inline-block img-fluid"
-              src="../assets/img/sockets-bits/E.jpg"
+              src="@/assets/img/sockets-bits/E.jpg"
               alt="Bits"
               loading="lazy"
             />
@@ -532,7 +528,7 @@
           <div class="col-6 col-sm-6 col-md-2 text-center">
             <img
               class="d-sm-inline-block img-fluid"
-              src="../assets/img/sockets-bits/F.jpg"
+              src="@/assets/img/sockets-bits/F.jpg"
               alt="Bit holders"
               loading="lazy"
             />
@@ -541,7 +537,7 @@
           <div class="col-6 col-sm-6 col-md-2 text-center">
             <img
               class="d-sm-inline-block img-fluid"
-              src="../assets/img/sockets-bits/G.jpg"
+              src="@/assets/img/sockets-bits/G.jpg"
               alt="Nut setters"
               loading="lazy"
             />
@@ -550,7 +546,7 @@
           <div class="col-6 col-sm-6 col-md-2 text-center">
             <img
               class="d-sm-inline-block img-fluid"
-              src="../assets/img/sockets-bits/H.jpg"
+              src="@/assets/img/sockets-bits/H.jpg"
               alt="Stud setters"
               loading="lazy"
             />
@@ -578,7 +574,7 @@
           </div>
           <div class="col-sm-12 col-md-6 text-center">
             <img
-              src="../assets/img/image_contact.jpg.png"
+              src="@/assets/img/image_contact.jpg"
               class="img-fluid"
               alt=""
               loading="lazy"
@@ -624,7 +620,7 @@
       <hr />
       <p class="mt-4">
         <img
-          src="../assets/img/saltus-logo-green.svg"
+          src="@/assets/img/saltus-logo-green.svg"
           height="30"
           alt=""
           loading="lazy"
@@ -642,6 +638,7 @@
 // @ is an alias to /src
 import ImageCarousel from '@/components/ImageCarousel.vue'
 import DigitalTwinForm from '@/components/DigitalTwinForm.vue'
+import ImageService from '@/services/ImageService.js'
 
 export default {
   name: 'Home',
@@ -651,95 +648,14 @@ export default {
   },
   data() {
     return {
-      images: [
-        {
-          id: 1,
-          name: 'Logo 1',
-          path: '../assets/logo.png'
-        },
-        {
-          id: 2,
-          name: 'Logo 2',
-          path: '../assets/logo.png'
-        },
-        {
-          id: 3,
-          name: 'Logo 3',
-          path: '../assets/logo.png'
-        }
-      ]
+      CeImages: ImageService.getCeImages(),
+      OeImages: ImageService.getOeImages()
     }
   }
 }
 </script>
 
 <style scoped>
-body {
-  min-height: 75rem;
-  padding-top: 3.5rem;
-}
-
-hr.underliner {
-  border-top: solid 5px #007a57;
-  margin: 10px auto 20px;
-  width: 10%;
-}
-
-a {
-  color: #007a57;
-}
-
-a:hover {
-  color: #003326;
-}
-
-.btn-saltus {
-  background-color: #007a57;
-  border-color: #007a57;
-  color: #fff;
-  border-radius: 0;
-}
-
-.btn-saltus:hover {
-  color: #fff;
-  background-color: #003326;
-  border-color: #003326;
-}
-
-.saltus-color {
-  color: #007a57;
-}
-
-.bg-white {
-  background-color: #fff !important;
-}
-
-ul {
-  list-style: none;
-}
-
-ul.first li:before {
-  content: '';
-  display: inline-block;
-  height: 1em;
-  width: 1em;
-  background-image: url('../assets/img/right-chevron-green.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin-right: 0.5em;
-}
-
-ul.second li:before {
-  content: '';
-  display: inline-block;
-  height: 1em;
-  width: 1em;
-  background-image: url('../assets/img/right-chevron-yellow.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin-right: 0.5em;
-}
-
 /* HEADER */
 #video {
   background-color: #999;
