@@ -410,25 +410,25 @@ AddDefaultCharset utf-8
 # Be aware that the following might not be a good idea if you use "real"
 # subdomains for certain parts of your website.
 
-# <IfModule mod_rewrite.c>
+ <IfModule mod_rewrite.c>
 
-#     RewriteEngine On
+     RewriteEngine On
 
      # (1)
-#     RewriteCond %{HTTPS} =on
-#     RewriteRule ^ - [E=PROTO:https]
-#     RewriteCond %{HTTPS} !=on
-#     RewriteRule ^ - [E=PROTO:http]
+     RewriteCond %{HTTPS} =on
+     RewriteRule ^ - [E=PROTO:https]
+     RewriteCond %{HTTPS} !=on
+     RewriteRule ^ - [E=PROTO:http]
 
      # (2)
      # RewriteCond %{HTTPS} !=on
 
-#     RewriteCond %{HTTP_HOST} !^www\. [NC]
-#     RewriteCond %{SERVER_ADDR} !=127.0.0.1
-#     RewriteCond %{SERVER_ADDR} !=::1
-#     RewriteRule ^ %{ENV:PROTO}://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+     RewriteCond %{HTTP_HOST} !^www\. [NC]
+     RewriteCond %{SERVER_ADDR} !=127.0.0.1
+     RewriteCond %{SERVER_ADDR} !=::1
+     RewriteRule ^ %{ENV:PROTO}://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
-# </IfModule>
+ </IfModule>
 
 # ######################################################################
 # # SECURITY                                                           #

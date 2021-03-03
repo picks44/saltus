@@ -1,3 +1,11 @@
+# ######################################################################
+# # HTTP Basic Auth                                                    #
+# ######################################################################
+AuthType Basic
+AuthName "Restricted Content"
+AuthUserFile /var/www/preprod_saltus-tools_com/.htpasswd
+Require valid-user
+
 # Apache Server Configs v4.0.0 | MIT License
 # https://github.com/h5bp/server-configs-apache
 
@@ -414,14 +422,14 @@ AddDefaultCharset utf-8
 
 #     RewriteEngine On
 
-     # (1)
+#     # (1)
 #     RewriteCond %{HTTPS} =on
 #     RewriteRule ^ - [E=PROTO:https]
 #     RewriteCond %{HTTPS} !=on
 #     RewriteRule ^ - [E=PROTO:http]
 
-     # (2)
-     # RewriteCond %{HTTPS} !=on
+#     # (2)
+#     # RewriteCond %{HTTPS} !=on
 
 #     RewriteCond %{HTTP_HOST} !^www\. [NC]
 #     RewriteCond %{SERVER_ADDR} !=127.0.0.1
