@@ -35,10 +35,10 @@
         <li class="nav-item">
           <a
             class="nav-link"
-            href="#socket"
-            title="Socket & Bits"
+            href="#sockets"
+            title="Sockets & Bits"
             v-smooth-scroll
-            >Socket & Bits</a
+            >Sockets & Bits</a
           >
         </li>
         <li class="nav-item">

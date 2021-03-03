@@ -78,4 +78,34 @@ ul.second li:before {
   background-repeat: no-repeat;
   margin-right: 0.5em;
 }
+
+.go-down a,
+.go-up a {
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  display: inline-block;
+  padding: 10px;
+  text-shadow: none;
+}
+
+.go-down a {
+  background: #fff;
+  color: #007a57;
+}
+
+.go-up a {
+  background: #007a57;
+  color: #fff;
+}
+
+.go-down a:hover {
+  background: #fff;
+  color: #003326;
+}
+
+.go-up a:hover {
+  background: #003326;
+  color: #fff;
+}
 </style>
