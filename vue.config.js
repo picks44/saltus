@@ -4,6 +4,7 @@ module.exports = {
     themeColor: '#007a57',
     msTileColor: '#007a57',
     appleMobileWebAppCache: 'yes',
+    manifestCrossorigin: 'use-credentials',
     manifestOptions: {
       background_color: '#007a57',
       icons: [
