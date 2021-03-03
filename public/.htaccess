@@ -1,3 +1,16 @@
+# ######################################################################
+# # HTML5 History Mode                                                 #
+# ######################################################################
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+</IfModule>
+
 # Apache Server Configs v4.0.0 | MIT License
 # https://github.com/h5bp/server-configs-apache
 
