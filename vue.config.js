@@ -3,8 +3,13 @@ module.exports = {
     name: 'SALTUS',
     themeColor: '#007a57',
     msTileColor: '#007a57',
+    appleMobileWebAppCapable: 'yes',
     appleMobileWebAppCache: 'yes',
+    assetsVersion: '1.0.0',
     manifestCrossorigin: 'use-credentials',
+    workboxOptions: {
+      exclude: ['.htaccess']
+    },
     manifestOptions: {
       background_color: '#007a57',
       icons: [
