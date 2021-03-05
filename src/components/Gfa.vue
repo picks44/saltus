@@ -11,9 +11,9 @@
             <div class="carousel-inner">
               <ImageCarousel
                 v-for="(image, index) in CeImages"
-                :class="{ active: index === 0 }"
                 :key="image.id"
                 :image="image"
+                :index="index"
               />
             </div>
           </div>
@@ -21,9 +21,9 @@
             <div class="carousel-inner">
               <ImageCarousel
                 v-for="(image, index) in OeImages"
-                :class="{ active: index === 0 }"
                 :key="image.id"
                 :image="image"
+                :index="index"
               />
             </div>
           </div>

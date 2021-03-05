@@ -298,8 +298,32 @@
 </template>
 
 <script>
+import jQuery from 'jquery'
+const $ = jQuery
+window.$ = $
+
 export default {
-  name: 'Sockets'
+  name: 'Sockets',
+  mounted() {
+    $('#accordion').on('show.bs.collapse', function() {
+      $('#accordion').addClass('triggered')
+    })
+    $('#accordion').on('hidden.bs.collapse', function() {
+      let isOpen = []
+      $("#accordion > div[data-toggle='collapse']").each(function() {
+        var attr = $(this).attr('aria-expanded')
+        if (attr === 'true') {
+          isOpen.push(true)
+        } else {
+          isOpen.push(false)
+        }
+      })
+      let allClosed = isOpen.indexOf(true)
+      if (-1 === allClosed) {
+        $('#accordion').removeClass('triggered')
+      }
+    })
+  }
 }
 </script>
 
